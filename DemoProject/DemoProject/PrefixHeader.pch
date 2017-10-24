@@ -1,0 +1,35 @@
+//
+//  PrefixHeader.pch
+//  DemoProject
+//
+//  Created by foolsparadise on 24/10/2017.
+//  Copyright © 2017 github.com/foolsparadise All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifndef __OPTIMIZE__
+#define NSLog(FORMAT,...)   NSLog(@"%@文件%d行:%@",[[[NSString stringWithFormat:@"%s",__FILE__] componentsSeparatedByString:@"/"] lastObject], __LINE__,[NSString stringWithFormat:FORMAT, ##__VA_ARGS__])
+#else
+#define NSLog(...) {}
+#endif
+
+// 获取当前工程中的某xxx.png图片文件
+#define ImageWithNameInNSmainBundleFile(fileName) [UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:fileName]]
+// 获取当前class同名的.bundle文件中的某图片, (多个图片比如xxx.png文件封装与当前class同名的.bundle文件中)， usage: image = ImageWithNameInClassBundle(@"xxx");
+#define ImageWithNameInClassBundle(fileName) [UIImage imageNamed:fileName inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil]
+// 取其中某个图片，(多个图片比如xxx.png文件封装在XYZ.bundle的文件中)， usage: image = ImageWithNameInBundleFile(@"xxx", @"XYZ");
+#define ImageWithNameInBundleFile(fileName, bundleName) [UIImage imageWithContentsOfFile:[[[NSBundle bundleForClass:self.class] pathForResource:bundleName ofType:@"bundle"] stringByAppendingPathComponent:fileName]]
+
+// Info.plist 国际化字符串 宏获取
+#define NSStringLocalizedInfoPlist(key) NSLocalizedStringFromTable(key, @"InfoPlist", nil)
+
+// 提供一种透明的方式，让开发者像以前一样使用导航器，同时，每个 push 进来的 VC 有自己独立的导航条。
+// git clone https://github.com/rickytan/RTRootNavigationController
+#import "RTRootNavigationController.h"
+
+#endif /* PrefixHeader_pch */
