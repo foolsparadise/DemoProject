@@ -8,6 +8,6 @@
 
 #import "ViewController.h"
 
-@interface AppRootViewController : ViewController
+@interface AppRootViewController : UIViewController
 
 @end
