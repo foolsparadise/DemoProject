@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  DemoProject
+
+  Created by foolsparadise on 3/11/2017.
+  Copyright © 2017 github.com/foolsparadise. All rights reserved.
+*/
+
+CFBundleDisplayName = "简体中文应用名";
+"LanguageTest" = "简体中文测试";
+

@@ -36,7 +36,7 @@
     [self.window makeKeyAndVisible];
     
     NSArray * paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSLog(@"sandbox(%@)", paths[0]);
+    NSLog(@"language(%@)sandbox(%@)", NSStringLocalizedInfoPlist(@"LanguageTest"), paths[0]);
     return YES;
 }
 
