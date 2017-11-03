@@ -29,7 +29,10 @@
 #define NSStringLocalizedInfoPlist(key) NSLocalizedStringFromTable(key, @"InfoPlist", nil)
 
 // 提供一种透明的方式，让开发者像以前一样使用导航器，同时，每个 push 进来的 VC 有自己独立的导航条。
-// git clone https://github.com/rickytan/RTRootNavigationController
+// git clone https://github.com/rickytan/RTRootNavigationController 2017.10
 #import "RTRootNavigationController.h"
+// 一个感天动地的高度自定义的 tabBarController！你几乎可以自定义 100% 的属性！
+// git clone https://github.com/iTofu/LCTabBarController 2017.11.3
+#import "LCTabBarController.h"
 
 #endif /* PrefixHeader_pch */

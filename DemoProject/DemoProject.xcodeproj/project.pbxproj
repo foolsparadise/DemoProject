@@ -17,6 +17,13 @@
 		939F81141F9EF3C600A12EAA /* RTRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939F810F1F9EF3C600A12EAA /* RTRootNavigationController.m */; };
 		939F81151F9EF3C600A12EAA /* UIViewController+RTRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939F81111F9EF3C600A12EAA /* UIViewController+RTRootNavigationController.m */; };
 		93DB672A1FAC5782006B80C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93DB672C1FAC5782006B80C7 /* InfoPlist.strings */; };
+		93DB67481FAC63E5006B80C7 /* LCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DB673F1FAC63E5006B80C7 /* LCTabBar.m */; };
+		93DB67491FAC63E5006B80C7 /* LCTabBarBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DB67411FAC63E5006B80C7 /* LCTabBarBadge.m */; };
+		93DB674B1FAC63E5006B80C7 /* LCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DB67451FAC63E5006B80C7 /* LCTabBarController.m */; };
+		93DB674C1FAC63E5006B80C7 /* LCTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DB67471FAC63E5006B80C7 /* LCTabBarItem.m */; };
+		93DB674E1FAC651D006B80C7 /* LCTabBarControllerMore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 93DB674D1FAC651D006B80C7 /* LCTabBarControllerMore.bundle */; };
+		93DB67501FAC6842006B80C7 /* LCTabBarController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 93DB674F1FAC6842006B80C7 /* LCTabBarController.bundle */; };
+		93DB67531FAC69C8006B80C7 /* TabBarDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DB67521FAC69C8006B80C7 /* TabBarDemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +51,19 @@
 		93DB67391FAC6247006B80C7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		93DB673A1FAC6247006B80C7 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		93DB673C1FAC6249006B80C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93DB673E1FAC63E5006B80C7 /* LCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBar.h; sourceTree = "<group>"; };
+		93DB673F1FAC63E5006B80C7 /* LCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBar.m; sourceTree = "<group>"; };
+		93DB67401FAC63E5006B80C7 /* LCTabBarBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarBadge.h; sourceTree = "<group>"; };
+		93DB67411FAC63E5006B80C7 /* LCTabBarBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarBadge.m; sourceTree = "<group>"; };
+		93DB67421FAC63E5006B80C7 /* LCTabBarCONST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarCONST.h; sourceTree = "<group>"; };
+		93DB67441FAC63E5006B80C7 /* LCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarController.h; sourceTree = "<group>"; };
+		93DB67451FAC63E5006B80C7 /* LCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarController.m; sourceTree = "<group>"; };
+		93DB67461FAC63E5006B80C7 /* LCTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarItem.h; sourceTree = "<group>"; };
+		93DB67471FAC63E5006B80C7 /* LCTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarItem.m; sourceTree = "<group>"; };
+		93DB674D1FAC651D006B80C7 /* LCTabBarControllerMore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LCTabBarControllerMore.bundle; sourceTree = "<group>"; };
+		93DB674F1FAC6842006B80C7 /* LCTabBarController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LCTabBarController.bundle; sourceTree = "<group>"; };
+		93DB67511FAC69C8006B80C7 /* TabBarDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarDemoViewController.h; sourceTree = "<group>"; };
+		93DB67521FAC69C8006B80C7 /* TabBarDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarDemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +102,8 @@
 				932D12611F53CD2A00FFADA9 /* AppRootViewController.m */,
 				932D124F1F53CC7C00FFADA9 /* ViewController.h */,
 				932D12501F53CC7C00FFADA9 /* ViewController.m */,
+				93DB67511FAC69C8006B80C7 /* TabBarDemoViewController.h */,
+				93DB67521FAC69C8006B80C7 /* TabBarDemoViewController.m */,
 				932D12521F53CC7C00FFADA9 /* Main.storyboard */,
 				932D12551F53CC7C00FFADA9 /* Assets.xcassets */,
 				932D12571F53CC7C00FFADA9 /* LaunchScreen.storyboard */,
@@ -105,6 +127,8 @@
 		939F81081F9EF3C500A12EAA /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				93DB673D1FAC63E5006B80C7 /* LCTabBarController */,
+				93DB674D1FAC651D006B80C7 /* LCTabBarControllerMore.bundle */,
 				939F81091F9EF3C600A12EAA /* RTRootNavigationController */,
 			);
 			path = 3rd;
@@ -135,6 +159,23 @@
 				939F81111F9EF3C600A12EAA /* UIViewController+RTRootNavigationController.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		93DB673D1FAC63E5006B80C7 /* LCTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				93DB674F1FAC6842006B80C7 /* LCTabBarController.bundle */,
+				93DB673E1FAC63E5006B80C7 /* LCTabBar.h */,
+				93DB673F1FAC63E5006B80C7 /* LCTabBar.m */,
+				93DB67401FAC63E5006B80C7 /* LCTabBarBadge.h */,
+				93DB67411FAC63E5006B80C7 /* LCTabBarBadge.m */,
+				93DB67421FAC63E5006B80C7 /* LCTabBarCONST.h */,
+				93DB67441FAC63E5006B80C7 /* LCTabBarController.h */,
+				93DB67451FAC63E5006B80C7 /* LCTabBarController.m */,
+				93DB67461FAC63E5006B80C7 /* LCTabBarItem.h */,
+				93DB67471FAC63E5006B80C7 /* LCTabBarItem.m */,
+			);
+			path = LCTabBarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +241,8 @@
 				93DB672A1FAC5782006B80C7 /* InfoPlist.strings in Resources */,
 				932D12591F53CC7C00FFADA9 /* LaunchScreen.storyboard in Resources */,
 				932D12561F53CC7C00FFADA9 /* Assets.xcassets in Resources */,
+				93DB674E1FAC651D006B80C7 /* LCTabBarControllerMore.bundle in Resources */,
+				93DB67501FAC6842006B80C7 /* LCTabBarController.bundle in Resources */,
 				932D12541F53CC7C00FFADA9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,10 +254,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93DB67491FAC63E5006B80C7 /* LCTabBarBadge.m in Sources */,
+				93DB67481FAC63E5006B80C7 /* LCTabBar.m in Sources */,
 				939F81151F9EF3C600A12EAA /* UIViewController+RTRootNavigationController.m in Sources */,
+				93DB674B1FAC63E5006B80C7 /* LCTabBarController.m in Sources */,
 				932D12621F53CD2A00FFADA9 /* AppRootViewController.m in Sources */,
 				932D12511F53CC7C00FFADA9 /* ViewController.m in Sources */,
 				932D124E1F53CC7C00FFADA9 /* AppDelegate.m in Sources */,
+				93DB67531FAC69C8006B80C7 /* TabBarDemoViewController.m in Sources */,
+				93DB674C1FAC63E5006B80C7 /* LCTabBarItem.m in Sources */,
 				932D124B1F53CC7C00FFADA9 /* main.m in Sources */,
 				939F81141F9EF3C600A12EAA /* RTRootNavigationController.m in Sources */,
 			);
