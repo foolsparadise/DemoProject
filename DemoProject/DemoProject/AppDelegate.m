@@ -18,6 +18,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    /* 
+     // use 1 viewcontroller
+     UIViewController *rootVC = .....
+     UINavigationController *rootNav  = [[UINavigationController alloc] initWithRootViewController: rootVC];
+     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+     self.window.backgroundColor = [UIColor colorWithRed:(0/255.0) green:(0/255.0) blue:(0/255.0) alpha:1];
+     self.window.rootViewController = rootNav;
+     [self.window addSubview:self.window.rootViewController.view];
+     [self.window makeKeyAndVisible];
+     */
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     RTRootNavigationController *navigationController = [[RTRootNavigationController alloc] initWithRootViewController:[[AppRootViewController alloc] init]];
