@@ -20,6 +20,20 @@
     // Override point for customization after application launch.
 
 //////////////////////////////////////////////////////////////////////////////
+    if (@available(iOS 13, *)) {
+        // only run in >= iOS 13
+        if (UITraitCollection.currentTraitCollection.userInterfaceStyle == UIUserInterfaceStyleDark) {
+            //[@"DarkMode"];
+        }
+        else {
+            //@"LightMode"];
+        }
+    }
+    else {
+        // < iOS 13 run init
+    }
+    
+//////////////////////////////////////////////////////////////////////////////
     /* 
     // 1, use 1 viewcontroller
     UIViewController *rootVC = .....
