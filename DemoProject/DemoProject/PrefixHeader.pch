@@ -13,9 +13,9 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 #ifndef __OPTIMIZE__
-#define NSLog(FORMAT,...)   NSLog(@"%@文件%d行:%@",[[[NSString stringWithFormat:@"%s",__FILE__] componentsSeparatedByString:@"/"] lastObject], __LINE__,[NSString stringWithFormat:FORMAT, ##__VA_ARGS__])
+#define itNSLog(FORMAT,...)   NSLog(@"%@文件%d行:%@",[[[NSString stringWithFormat:@"%s",__FILE__] componentsSeparatedByString:@"/"] lastObject], __LINE__,[NSString stringWithFormat:FORMAT, ##__VA_ARGS__])
 #else
-#define NSLog(...) {}
+#define itNSLog(...) {}
 #endif
 
 // 获取当前工程中的某xxx.png图片文件
@@ -29,10 +29,22 @@
 #define NSStringLocalizedInfoPlist(key) NSLocalizedStringFromTable(key, @"InfoPlist", nil)
 
 // 提供一种透明的方式，让开发者像以前一样使用导航器，同时，每个 push 进来的 VC 有自己独立的导航条。
-// git clone https://github.com/rickytan/RTRootNavigationController 2017.10
+// git clone https://github.com/rickytan/RTRootNavigationController
 #import "RTRootNavigationController.h"
 // 一个感天动地的高度自定义的 tabBarController！你几乎可以自定义 100% 的属性！
-// git clone https://github.com/iTofu/LCTabBarController 2017.11.3
+// git clone https://github.com/iTofu/LCTabBarController
 #import "LCTabBarController.h"
+
+/*
+ # iOSProjectDemo
+ iOSProjectDemo
+ Demo空白工程
+ 去除默认storyborad，添加PrefixHeader.pch宏编译文件，使用self.navigationController的push或pop方式
+ application didFinishLaunchingWithOptions 有3种方式
+ PrefixHeader.pch 有常用宏定义 和 Readme
+ 更新第3方库
+ https://github.com/rickytan/RTRootNavigationController 2020.1.15
+ https://github.com/iTofu/LCTabBarController  2020.1.15
+ */
 
 #endif /* PrefixHeader_pch */

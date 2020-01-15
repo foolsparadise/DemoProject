@@ -22,7 +22,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSLog(@"ViewController.m viewDidLoad");
+    itNSLog(@"ViewController.m viewDidLoad");
+    self.view.backgroundColor = [UIColor yellowColor];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"backto" style:UIBarButtonItemStylePlain target:self action:@selector(backtoAppRootViewController)];
     
 }

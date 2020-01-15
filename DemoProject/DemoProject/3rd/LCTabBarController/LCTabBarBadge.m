@@ -27,6 +27,7 @@
 
 #import "LCTabBarBadge.h"
 #import "LCTabBarCONST.h"
+#import "UIImage+LCTarBarController.h"
 
 @implementation LCTabBarBadge
 
@@ -38,12 +39,17 @@
         self.hidden = YES;
 //        self.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin;
         
-        NSString *bundlePath = [[NSBundle bundleForClass:self.class] pathForResource:@"LCTabBarController" ofType:@"bundle"];
-        NSString *imagePath = [bundlePath stringByAppendingPathComponent:@"LCTabBarBadge@2x.png"];
-        [self setBackgroundImage:[self resizedImageFromMiddle:[UIImage imageWithContentsOfFile:imagePath]]
-                        forState:UIControlStateNormal];
+        CGFloat badgeR = 16.0;
+        UIImage *bgImage = [UIImage lc_imageWithColor:LCColorForTabBar(255.0, 91.0, 54.0) size:CGSizeMake(badgeR, badgeR)];
+        [self setBackgroundImage:bgImage forState:UIControlStateNormal];
     }
     return self;
+}
+
+- (void)setTabBarItemCount:(NSInteger)tabBarItemCount {
+    _tabBarItemCount = tabBarItemCount;
+    
+    [self updateView];
 }
 
 - (void)setBadgeTitleFont:(UIFont *)badgeTitleFont {
@@ -63,28 +69,41 @@
         
         [self setTitle:badgeValue forState:UIControlStateNormal];
         
-        CGRect frame = self.frame;
-        
-        if (self.badgeValue.length > 0) {
-            
-            CGFloat badgeW = self.currentBackgroundImage.size.width;
-            CGFloat badgeH = self.currentBackgroundImage.size.height;
-            
-            CGSize titleSize = [badgeValue sizeWithAttributes:[NSDictionary dictionaryWithObjectsAndKeys:self.badgeTitleFont, NSFontAttributeName, nil]];
-            frame.size.width = MAX(badgeW, titleSize.width + 10);
-            frame.size.height = badgeH;
-            self.frame = frame;
-            
-        } else {
-            
-            frame.size.width = 12.0f;
-            frame.size.height = frame.size.width;
-        }
-        
-        frame.origin.x = 58.0f * ([UIScreen mainScreen].bounds.size.width / self.tabBarItemCount) / 375.0f * 4.0f;
-        frame.origin.y = 2.0f;
-        self.frame = frame;
+        [self updateView];
     }
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    [self updateView];
+}
+
+- (void)updateView {
+    CGRect frame = self.frame;
+    
+    if (self.badgeValue.length > 0) {
+        
+        CGFloat badgeW = self.currentBackgroundImage.size.width;
+        CGFloat badgeH = self.currentBackgroundImage.size.height;
+        
+        CGSize titleSize = [self.badgeValue sizeWithAttributes:@{NSFontAttributeName : self.badgeTitleFont}];
+        frame.size.width = MAX(badgeW, titleSize.width + 10);
+        frame.size.height = badgeH;
+        self.frame = frame;
+        
+    } else {
+        
+        frame.size.width = 12.0f;
+        frame.size.height = frame.size.width;
+    }
+    
+    frame.origin.x = self.superview.bounds.size.width * 0.5 + 12.0;
+    frame.origin.y = 2.0f;
+    self.frame = frame;
+    
+    self.layer.cornerRadius = frame.size.height * 0.5;
+    self.layer.masksToBounds = YES;
 }
 
 - (UIImage *)resizedImageFromMiddle:(UIImage *)image {

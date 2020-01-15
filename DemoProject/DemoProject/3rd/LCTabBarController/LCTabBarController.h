@@ -27,6 +27,7 @@
 
 #import <UIKit/UIKit.h>
 #import "LCTabBar.h"
+#import "LCTabBarCONST.h"
 
 @interface LCTabBarController : UITabBarController
 
@@ -64,6 +65,6 @@
  *  System will display the original controls so you should call this line when you change any tabBar item, like: `- popToRootViewController`, `someViewController.tabBarItem.title = xx`, etc.
  *  Remove origin controls
  */
-- (void)removeOriginControls __deprecated_msg("Method deprecated. The framework will be processed automatically now.");
+- (void)removeOriginControls NS_DEPRECATED_IOS(2_0, 11_0, "Method deprecated. For iOS 11.0+, framework will process it automatically.");
 
 @end

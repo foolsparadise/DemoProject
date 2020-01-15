@@ -20,6 +20,7 @@
     // Override point for customization after application launch.
 
 //////////////////////////////////////////////////////////////////////////////
+    //if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 13.0) {
     if (@available(iOS 13, *)) {
         // only run in >= iOS 13
         if (UITraitCollection.currentTraitCollection.userInterfaceStyle == UIUserInterfaceStyleDark) {
@@ -103,8 +104,17 @@
      
 //////////////////////////////////////////////////////////////////////////////
     
+    //self.window.backgroundColor = [UIColor whiteColor];
+    //设置默认的 DarkMode ?! 适配夜间模式/深色外观(Dark Mode)
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 13.0) {
+        if (@available(iOS 13, *))
+            self.window.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    } else {
+        // Fallback on earlier versions
+    }
+    
     NSArray * paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSLog(@"language(%@)sandbox(%@)", NSStringLocalizedInfoPlist(@"LanguageTest"), paths[0]);
+    itNSLog(@"language(%@)sandbox(%@)", NSStringLocalizedInfoPlist(@"LanguageTest"), paths[0]);
     return YES;
 }
 

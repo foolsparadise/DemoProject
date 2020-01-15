@@ -22,7 +22,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSLog(@"TabBarDemoViewController viewDidLoad");
+    itNSLog(@"TabBarDemoViewController viewDidLoad");
+    self.view.backgroundColor = [UIColor redColor];
     // 设置navigationItem左右item
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Change Item" style:UIBarButtonItemStyleDone target:self action:@selector(leftBarButtonItemClicked)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Goto 2nd" style:UIBarButtonItemStyleDone target:self action:@selector(rightBarButtonItemClicked)];
@@ -35,7 +36,7 @@
     self.tabBarItem.selectedImage = ImageWithNameInBundleFile(@"tabbar_profile_selected",@"LCTabBarControllerMore");//[UIImage imageNamed:@"tabbar_profile_selected"];
     self.tabBarItem.title = @"Woo!";
     //    for (UIViewController *vc in ((UITabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController).viewControllers) {
-    //        NSLog(@"%@", vc);
+    //        itNSLog(@"%@", vc);
     //        vc.tabBarItem.badgeValue = [NSString stringWithFormat:@"%ld", vc.tabBarItem.badgeValue.integerValue + 100];
     //    }
     // 计算加减
