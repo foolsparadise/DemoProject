@@ -23,6 +23,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     itNSLog(@"ViewController.m viewDidLoad");
+    self.title = @"viewcontroller.m";
+    self.tabBarController.tabBar.hidden = YES;
     self.view.backgroundColor = [UIColor yellowColor];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"backto" style:UIBarButtonItemStylePlain target:self action:@selector(backtoAppRootViewController)];
     

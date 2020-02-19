@@ -46,10 +46,8 @@
     [self.window makeKeyAndVisible];
     */
 //////////////////////////////////////////////////////////////////////////////
-    /*
+    
     // 2, use 1 tabcontroller
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    [self.window makeKeyAndVisible];
 
     TabBarDemoViewController *vc1 = [[TabBarDemoViewController alloc] init];
     vc1.view.backgroundColor = [UIColor whiteColor];
@@ -90,10 +88,13 @@
     //    tabBarC.itemImageRatio         = 0.5f;
     //    tabBarC.badgeTitleFont         = [UIFont boldSystemFontOfSize:12.0f];
     tabBarC.viewControllers        = @[navC1, navC2, navC3, navC4];
-    self.window.rootViewController = tabBarC;
-    */
-//////////////////////////////////////////////////////////////////////////////
     
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window makeKeyAndVisible];
+    self.window.rootViewController = tabBarC;
+    
+//////////////////////////////////////////////////////////////////////////////
+    /*
     // 3, use rootnavcontroller
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
@@ -101,7 +102,7 @@
     self.AppDelegateViewController = navigationController;
     self.window.rootViewController = self.AppDelegateViewController;
     [self.window makeKeyAndVisible];
-     
+     */
 //////////////////////////////////////////////////////////////////////////////
     
     //self.window.backgroundColor = [UIColor whiteColor];

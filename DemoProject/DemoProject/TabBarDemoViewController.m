@@ -8,6 +8,8 @@
 
 #import "TabBarDemoViewController.h"
 #import "AppRootViewController.h"
+#import "ViewController.h"
+
 @interface TabBarDemoViewController ()
 
 @end
@@ -27,6 +29,12 @@
     // 设置navigationItem左右item
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Change Item" style:UIBarButtonItemStyleDone target:self action:@selector(leftBarButtonItemClicked)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Goto 2nd" style:UIBarButtonItemStyleDone target:self action:@selector(rightBarButtonItemClicked)];
+    
+}
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.tabBarController.tabBar.hidden = NO;
     
 }
 - (void)leftBarButtonItemClicked {
@@ -51,7 +59,8 @@
 
 - (void)rightBarButtonItemClicked {
     // 跳转到第2个
-    [(LCTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController setSelectedIndex:1];
+    //[(LCTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController setSelectedIndex:1];
+    [self.navigationController pushViewController:[ViewController new] animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
