@@ -8,7 +8,9 @@
 
 #import "AppDelegate.h"
 #import "AppRootViewController.h"
-#import "TabBarDemoViewController.h"
+#import "TabBarDemo1ViewController.h"
+#import "TabBarDemo2ViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -49,7 +51,7 @@
     
     // 2, use 1 tabcontroller
 
-    TabBarDemoViewController *vc1 = [[TabBarDemoViewController alloc] init];
+    TabBarDemo1ViewController *vc1 = [[TabBarDemo1ViewController alloc] init];
     vc1.view.backgroundColor = [UIColor whiteColor];
     vc1.tabBarItem.badgeValue = @"23";
     vc1.title = @"Home";

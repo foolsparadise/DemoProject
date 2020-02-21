@@ -1,30 +1,26 @@
 //
-//  TabBarDemoViewController.m
+//  TabBarDemo1ViewController.m
 //  DemoProject
 //
-//  Created by foolsparadise on 4/11/2017.
-//  Copyright © 2017 github.com/foolsparadise All rights reserved.
+//  Created by foolsparadise on 21/2/2020.
+//  Copyright © 2020 github.com/foolsparadise All rights reserved.
 //
 
-#import "TabBarDemoViewController.h"
+#import "TabBarDemo1ViewController.h"
 #import "AppRootViewController.h"
 #import "ViewController.h"
 
-@interface TabBarDemoViewController ()
+@interface TabBarDemo1ViewController ()
 
 @end
 
-@implementation TabBarDemoViewController
-
-//- (void)dealloc {
-//
-//}
+@implementation TabBarDemo1ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view.
     
-    itNSLog(@"TabBarDemoViewController viewDidLoad");
+    itNSLog(@"TabBarDemo1ViewController viewDidLoad");
     self.view.backgroundColor = [UIColor redColor];
     // 设置navigationItem左右item
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Change Item" style:UIBarButtonItemStyleDone target:self action:@selector(leftBarButtonItemClicked)];
@@ -63,10 +59,14 @@
     [self.navigationController pushViewController:[ViewController new] animated:YES];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+/*
+#pragma mark - Navigation
 
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end
