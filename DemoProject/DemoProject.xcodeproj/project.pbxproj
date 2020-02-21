@@ -10,6 +10,19 @@
 		7843498A23CEEE9B00BA8017 /* UIImage+LCTarBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7843498923CEEE9B00BA8017 /* UIImage+LCTarBarController.m */; };
 		78E7C9C223FF6DE100C4FFA3 /* TabBarDemo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E7C9C123FF6DE100C4FFA3 /* TabBarDemo1ViewController.m */; };
 		78E7C9C523FF6DEF00C4FFA3 /* TabBarDemo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E7C9C423FF6DEF00C4FFA3 /* TabBarDemo2ViewController.m */; };
+		78E7C9DF23FF747800C4FFA3 /* AdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E7C9C823FF747800C4FFA3 /* AdvertiseView.m */; };
+		78E7C9E023FF747800C4FFA3 /* AdImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E7C9C923FF747800C4FFA3 /* AdImageTool.m */; };
+		78E7C9E123FF747800C4FFA3 /* AdvertiseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E7C9CA23FF747800C4FFA3 /* AdvertiseViewController.m */; };
+		78E7C9E223FF747800C4FFA3 /* NotoSansCJK-Thin-2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78E7C9CD23FF747800C4FFA3 /* NotoSansCJK-Thin-2.otf */; };
+		78E7C9E323FF747800C4FFA3 /* NotoSansCJK-Light-3.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78E7C9CE23FF747800C4FFA3 /* NotoSansCJK-Light-3.otf */; };
+		78E7C9E423FF747800C4FFA3 /* UIColor+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E7C9D123FF747800C4FFA3 /* UIColor+PYSearchExtension.m */; };
+		78E7C9E523FF747800C4FFA3 /* PYSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E7C9D223FF747800C4FFA3 /* PYSearchViewController.m */; };
+		78E7C9E623FF747800C4FFA3 /* PYSearchSuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E7C9D323FF747800C4FFA3 /* PYSearchSuggestionViewController.m */; };
+		78E7C9E723FF747800C4FFA3 /* PYSearchConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E7C9D523FF747800C4FFA3 /* PYSearchConst.m */; };
+		78E7C9E823FF747800C4FFA3 /* PYSearch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 78E7C9D623FF747800C4FFA3 /* PYSearch.bundle */; };
+		78E7C9E923FF747800C4FFA3 /* NSBundle+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E7C9D723FF747800C4FFA3 /* NSBundle+PYSearchExtension.m */; };
+		78E7C9EA23FF747800C4FFA3 /* UIView+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E7C9DD23FF747800C4FFA3 /* UIView+PYSearchExtension.m */; };
+		78E7C9EB23FF747800C4FFA3 /* NotoSansCJK-Regular-1.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78E7C9DE23FF747800C4FFA3 /* NotoSansCJK-Regular-1.otf */; };
 		932D124B1F53CC7C00FFADA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 932D124A1F53CC7C00FFADA9 /* main.m */; };
 		932D124E1F53CC7C00FFADA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 932D124D1F53CC7C00FFADA9 /* AppDelegate.m */; };
 		932D12511F53CC7C00FFADA9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 932D12501F53CC7C00FFADA9 /* ViewController.m */; };
@@ -35,6 +48,29 @@
 		78E7C9C123FF6DE100C4FFA3 /* TabBarDemo1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarDemo1ViewController.m; sourceTree = "<group>"; };
 		78E7C9C323FF6DEF00C4FFA3 /* TabBarDemo2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarDemo2ViewController.h; sourceTree = "<group>"; };
 		78E7C9C423FF6DEF00C4FFA3 /* TabBarDemo2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarDemo2ViewController.m; sourceTree = "<group>"; };
+		78E7C9C723FF747800C4FFA3 /* AdvertiseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseViewController.h; sourceTree = "<group>"; };
+		78E7C9C823FF747800C4FFA3 /* AdvertiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertiseView.m; sourceTree = "<group>"; };
+		78E7C9C923FF747800C4FFA3 /* AdImageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdImageTool.m; sourceTree = "<group>"; };
+		78E7C9CA23FF747800C4FFA3 /* AdvertiseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertiseViewController.m; sourceTree = "<group>"; };
+		78E7C9CB23FF747800C4FFA3 /* AdImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdImageTool.h; sourceTree = "<group>"; };
+		78E7C9CC23FF747800C4FFA3 /* AdvertiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseView.h; sourceTree = "<group>"; };
+		78E7C9CD23FF747800C4FFA3 /* NotoSansCJK-Thin-2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJK-Thin-2.otf"; sourceTree = "<group>"; };
+		78E7C9CE23FF747800C4FFA3 /* NotoSansCJK-Light-3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJK-Light-3.otf"; sourceTree = "<group>"; };
+		78E7C9D023FF747800C4FFA3 /* NSBundle+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+PYSearchExtension.h"; sourceTree = "<group>"; };
+		78E7C9D123FF747800C4FFA3 /* UIColor+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PYSearchExtension.m"; sourceTree = "<group>"; };
+		78E7C9D223FF747800C4FFA3 /* PYSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSearchViewController.m; sourceTree = "<group>"; };
+		78E7C9D323FF747800C4FFA3 /* PYSearchSuggestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSearchSuggestionViewController.m; sourceTree = "<group>"; };
+		78E7C9D423FF747800C4FFA3 /* UIView+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PYSearchExtension.h"; sourceTree = "<group>"; };
+		78E7C9D523FF747800C4FFA3 /* PYSearchConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSearchConst.m; sourceTree = "<group>"; };
+		78E7C9D623FF747800C4FFA3 /* PYSearch.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PYSearch.bundle; sourceTree = "<group>"; };
+		78E7C9D723FF747800C4FFA3 /* NSBundle+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+PYSearchExtension.m"; sourceTree = "<group>"; };
+		78E7C9D823FF747800C4FFA3 /* PYSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearch.h; sourceTree = "<group>"; };
+		78E7C9D923FF747800C4FFA3 /* PYSearchSuggestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchSuggestionViewController.h; sourceTree = "<group>"; };
+		78E7C9DA23FF747800C4FFA3 /* PYSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchViewController.h; sourceTree = "<group>"; };
+		78E7C9DB23FF747800C4FFA3 /* UIColor+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PYSearchExtension.h"; sourceTree = "<group>"; };
+		78E7C9DC23FF747800C4FFA3 /* PYSearchConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchConst.h; sourceTree = "<group>"; };
+		78E7C9DD23FF747800C4FFA3 /* UIView+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PYSearchExtension.m"; sourceTree = "<group>"; };
+		78E7C9DE23FF747800C4FFA3 /* NotoSansCJK-Regular-1.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJK-Regular-1.otf"; sourceTree = "<group>"; };
 		932D12461F53CC7C00FFADA9 /* DemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		932D124A1F53CC7C00FFADA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		932D124C1F53CC7C00FFADA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +127,40 @@
 			path = TabBarDemoViewController;
 			sourceTree = "<group>";
 		};
+		78E7C9C623FF747800C4FFA3 /* AdvertiseView */ = {
+			isa = PBXGroup;
+			children = (
+				78E7C9C723FF747800C4FFA3 /* AdvertiseViewController.h */,
+				78E7C9CA23FF747800C4FFA3 /* AdvertiseViewController.m */,
+				78E7C9CC23FF747800C4FFA3 /* AdvertiseView.h */,
+				78E7C9C823FF747800C4FFA3 /* AdvertiseView.m */,
+				78E7C9CB23FF747800C4FFA3 /* AdImageTool.h */,
+				78E7C9C923FF747800C4FFA3 /* AdImageTool.m */,
+			);
+			path = AdvertiseView;
+			sourceTree = "<group>";
+		};
+		78E7C9CF23FF747800C4FFA3 /* PYSearch */ = {
+			isa = PBXGroup;
+			children = (
+				78E7C9D023FF747800C4FFA3 /* NSBundle+PYSearchExtension.h */,
+				78E7C9D123FF747800C4FFA3 /* UIColor+PYSearchExtension.m */,
+				78E7C9D223FF747800C4FFA3 /* PYSearchViewController.m */,
+				78E7C9D323FF747800C4FFA3 /* PYSearchSuggestionViewController.m */,
+				78E7C9D423FF747800C4FFA3 /* UIView+PYSearchExtension.h */,
+				78E7C9D523FF747800C4FFA3 /* PYSearchConst.m */,
+				78E7C9D623FF747800C4FFA3 /* PYSearch.bundle */,
+				78E7C9D723FF747800C4FFA3 /* NSBundle+PYSearchExtension.m */,
+				78E7C9D823FF747800C4FFA3 /* PYSearch.h */,
+				78E7C9D923FF747800C4FFA3 /* PYSearchSuggestionViewController.h */,
+				78E7C9DA23FF747800C4FFA3 /* PYSearchViewController.h */,
+				78E7C9DB23FF747800C4FFA3 /* UIColor+PYSearchExtension.h */,
+				78E7C9DC23FF747800C4FFA3 /* PYSearchConst.h */,
+				78E7C9DD23FF747800C4FFA3 /* UIView+PYSearchExtension.m */,
+			);
+			path = PYSearch;
+			sourceTree = "<group>";
+		};
 		932D123D1F53CC7C00FFADA9 = {
 			isa = PBXGroup;
 			children = (
@@ -117,13 +187,13 @@
 				932D124F1F53CC7C00FFADA9 /* ViewController.h */,
 				932D12501F53CC7C00FFADA9 /* ViewController.m */,
 				78E7C9BF23FF6D4100C4FFA3 /* TabBarDemoViewController */,
+				939F81081F9EF3C500A12EAA /* 3rd */,
 				932D12521F53CC7C00FFADA9 /* Main.storyboard */,
-				932D12551F53CC7C00FFADA9 /* Assets.xcassets */,
 				932D12571F53CC7C00FFADA9 /* LaunchScreen.storyboard */,
+				93DB672C1FAC5782006B80C7 /* InfoPlist.strings */,
+				932D12551F53CC7C00FFADA9 /* Assets.xcassets */,
 				932D12981F54030600FFADA9 /* PrefixHeader.pch */,
 				932D125A1F53CC7C00FFADA9 /* Info.plist */,
-				93DB672C1FAC5782006B80C7 /* InfoPlist.strings */,
-				939F81081F9EF3C500A12EAA /* 3rd */,
 				932D12491F53CC7C00FFADA9 /* Supporting Files */,
 			);
 			path = DemoProject;
@@ -140,6 +210,11 @@
 		939F81081F9EF3C500A12EAA /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				78E7C9C623FF747800C4FFA3 /* AdvertiseView */,
+				78E7C9CF23FF747800C4FFA3 /* PYSearch */,
+				78E7C9DE23FF747800C4FFA3 /* NotoSansCJK-Regular-1.otf */,
+				78E7C9CD23FF747800C4FFA3 /* NotoSansCJK-Thin-2.otf */,
+				78E7C9CE23FF747800C4FFA3 /* NotoSansCJK-Light-3.otf */,
 				93DB673D1FAC63E5006B80C7 /* LCTabBarController */,
 				93DB674D1FAC651D006B80C7 /* LCTabBarControllerMore.bundle */,
 				939F81091F9EF3C600A12EAA /* RTRootNavigationController */,
@@ -251,11 +326,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E7C9E323FF747800C4FFA3 /* NotoSansCJK-Light-3.otf in Resources */,
 				93DB672A1FAC5782006B80C7 /* InfoPlist.strings in Resources */,
+				78E7C9EB23FF747800C4FFA3 /* NotoSansCJK-Regular-1.otf in Resources */,
 				932D12591F53CC7C00FFADA9 /* LaunchScreen.storyboard in Resources */,
 				932D12561F53CC7C00FFADA9 /* Assets.xcassets in Resources */,
+				78E7C9E223FF747800C4FFA3 /* NotoSansCJK-Thin-2.otf in Resources */,
 				93DB674E1FAC651D006B80C7 /* LCTabBarControllerMore.bundle in Resources */,
 				93DB67501FAC6842006B80C7 /* LCTabBarController.bundle in Resources */,
+				78E7C9E823FF747800C4FFA3 /* PYSearch.bundle in Resources */,
 				932D12541F53CC7C00FFADA9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,8 +346,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E7C9E723FF747800C4FFA3 /* PYSearchConst.m in Sources */,
+				78E7C9E923FF747800C4FFA3 /* NSBundle+PYSearchExtension.m in Sources */,
+				78E7C9DF23FF747800C4FFA3 /* AdvertiseView.m in Sources */,
 				93DB67491FAC63E5006B80C7 /* LCTabBarBadge.m in Sources */,
 				93DB67481FAC63E5006B80C7 /* LCTabBar.m in Sources */,
+				78E7C9E523FF747800C4FFA3 /* PYSearchViewController.m in Sources */,
 				78E7C9C523FF6DEF00C4FFA3 /* TabBarDemo2ViewController.m in Sources */,
 				939F81151F9EF3C600A12EAA /* UIViewController+RTRootNavigationController.m in Sources */,
 				93DB674B1FAC63E5006B80C7 /* LCTabBarController.m in Sources */,
@@ -276,10 +359,15 @@
 				932D12511F53CC7C00FFADA9 /* ViewController.m in Sources */,
 				7843498A23CEEE9B00BA8017 /* UIImage+LCTarBarController.m in Sources */,
 				932D124E1F53CC7C00FFADA9 /* AppDelegate.m in Sources */,
+				78E7C9EA23FF747800C4FFA3 /* UIView+PYSearchExtension.m in Sources */,
+				78E7C9E123FF747800C4FFA3 /* AdvertiseViewController.m in Sources */,
 				93DB674C1FAC63E5006B80C7 /* LCTabBarItem.m in Sources */,
+				78E7C9E623FF747800C4FFA3 /* PYSearchSuggestionViewController.m in Sources */,
 				78E7C9C223FF6DE100C4FFA3 /* TabBarDemo1ViewController.m in Sources */,
+				78E7C9E423FF747800C4FFA3 /* UIColor+PYSearchExtension.m in Sources */,
 				932D124B1F53CC7C00FFADA9 /* main.m in Sources */,
 				939F81141F9EF3C600A12EAA /* RTRootNavigationController.m in Sources */,
+				78E7C9E023FF747800C4FFA3 /* AdImageTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

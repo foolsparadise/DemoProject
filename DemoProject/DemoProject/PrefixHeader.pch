@@ -34,6 +34,15 @@
 // 一个感天动地的高度自定义的 tabBarController！你几乎可以自定义 100% 的属性！
 // git clone https://github.com/iTofu/LCTabBarController
 #import "LCTabBarController.h"
+// iOS启动广告页，iOS启动闪屏。带倒计时跳过按钮、点击跳转广告webView
+// git clone https://github.com/wownbafifa/ZNAdvertiseView
+// 图片URL地址,在 AdImageTool.m getAdvertisingImage 中修改
+#import "AdvertiseView.h"
+#import "AdImageTool.h"
+#import "AdvertiseViewController.h"
+// 搜索
+// git clone https://github.com/ko1o/PYSearch
+#import "PYSearch.h"
 
 /*
 # iOSProjectDemo  
