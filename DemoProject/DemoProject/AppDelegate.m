@@ -151,14 +151,12 @@
 }
 
 - (void)pushToAd {
-////    NSString *url = [SystemInfo getSystemInfoFoKey:@"LAUNCH_INTENT_URL"];//判断是否有需要跳转的广告页
-////    if (url.length > 0) {
-//        AdvertiseViewController *adVc = [[AdvertiseViewController alloc] init];
-////        adVc.adUrl = url;
-//        [self.navigationController pushViewController:adVc animated:YES];
-////    }
     NSLog(@"pushtoAd 建议不要写在AppDelegate写在其它地方");
     //UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    LCTabBarController *drawerVC = (LCTabBarController *)((AppDelegate *)[UIApplication sharedApplication].delegate).window.rootViewController;
+    //跳转,代码OK的
+    //WebViewController *vc = [WebViewController new];
+    //[drawerVC.viewControllers[0] pushViewController:vc animated:YES];
 }
 // 遍历获取字体名称
 - (void)printFontName

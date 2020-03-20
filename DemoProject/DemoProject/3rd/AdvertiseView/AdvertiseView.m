@@ -36,11 +36,11 @@ static int const showtime = 5;
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
-        
+        self.backgroundColor=[UIColor blackColor];
         // 1.广告图片
         _adView = [[UIImageView alloc] initWithFrame:frame];
         _adView.userInteractionEnabled = YES;
-        _adView.contentMode = UIViewContentModeScaleAspectFill;
+        _adView.contentMode = UIViewContentModeScaleAspectFit;
         _adView.clipsToBounds = YES;
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushToAd)];
         [_adView addGestureRecognizer:tap];
