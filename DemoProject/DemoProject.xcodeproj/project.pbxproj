@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7843498A23CEEE9B00BA8017 /* UIImage+LCTarBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7843498923CEEE9B00BA8017 /* UIImage+LCTarBarController.m */; };
+		78792CA72429F2910065B36B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78792CA62429F2910065B36B /* WebKit.framework */; };
+		78792CAA2429F29C0065B36B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78792CA82429F29C0065B36B /* CFNetwork.framework */; };
+		78792CAB2429F29C0065B36B /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78792CA92429F29C0065B36B /* Network.framework */; };
 		78E7C9C223FF6DE100C4FFA3 /* TabBarDemo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E7C9C123FF6DE100C4FFA3 /* TabBarDemo1ViewController.m */; };
 		78E7C9C523FF6DEF00C4FFA3 /* TabBarDemo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E7C9C423FF6DEF00C4FFA3 /* TabBarDemo2ViewController.m */; };
 		78E7C9DF23FF747800C4FFA3 /* AdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E7C9C823FF747800C4FFA3 /* AdvertiseView.m */; };
@@ -44,6 +47,9 @@
 /* Begin PBXFileReference section */
 		7843498823CEEE9B00BA8017 /* UIImage+LCTarBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LCTarBarController.h"; sourceTree = "<group>"; };
 		7843498923CEEE9B00BA8017 /* UIImage+LCTarBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LCTarBarController.m"; sourceTree = "<group>"; };
+		78792CA62429F2910065B36B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		78792CA82429F29C0065B36B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		78792CA92429F29C0065B36B /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
 		78E7C9C023FF6DE100C4FFA3 /* TabBarDemo1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarDemo1ViewController.h; sourceTree = "<group>"; };
 		78E7C9C123FF6DE100C4FFA3 /* TabBarDemo1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarDemo1ViewController.m; sourceTree = "<group>"; };
 		78E7C9C323FF6DEF00C4FFA3 /* TabBarDemo2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarDemo2ViewController.h; sourceTree = "<group>"; };
@@ -110,12 +116,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78792CAA2429F29C0065B36B /* CFNetwork.framework in Frameworks */,
+				78792CA72429F2910065B36B /* WebKit.framework in Frameworks */,
+				78792CAB2429F29C0065B36B /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78792CA52429F2910065B36B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78792CA82429F29C0065B36B /* CFNetwork.framework */,
+				78792CA92429F29C0065B36B /* Network.framework */,
+				78792CA62429F2910065B36B /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		78E7C9BF23FF6D4100C4FFA3 /* TabBarDemoViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +185,7 @@
 			children = (
 				932D12481F53CC7C00FFADA9 /* DemoProject */,
 				932D12471F53CC7C00FFADA9 /* Products */,
+				78792CA52429F2910065B36B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
