@@ -27,21 +27,7 @@
  
 -(void)gotoMainView
 {
-//////////////////////////////////////////////////////////////////////////////
-    //if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 13.0) {
-    if (@available(iOS 13, *)) {
-        // only run in >= iOS 13
-        if (UITraitCollection.currentTraitCollection.userInterfaceStyle == UIUserInterfaceStyleDark) {
-            //[@"DarkMode"];
-        }
-        else {
-            //@"LightMode"];
-        }
-    }
-    else {
-        // < iOS 13 run init
-    }
-    
+   
 //////////////////////////////////////////////////////////////////////////////
     /* 
     // 方案1, use 1 viewcontroller
@@ -148,6 +134,23 @@
     [AdImageTool getAdvertisingImage];//判断广告是否更新 图片URL地址,在 AdImageTool.m getAdvertisingImage 中修改
     
 
+    //////////////////////////////////////////////////////////////////////////////
+    //if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 13.0) {
+    if (@available(iOS 13, *)) {
+        // only run in >= iOS 13
+        if (UITraitCollection.currentTraitCollection.userInterfaceStyle == UIUserInterfaceStyleDark) {
+            //[@"DarkMode"];
+            [self.window setOverrideUserInterfaceStyle:UIUserInterfaceStyleLight];
+        }
+        else {
+            //@"LightMode"];
+        }
+    }
+    else {
+        // < iOS 13 run init
+    }
+    
+    
 }
 
 - (void)pushToAd {
